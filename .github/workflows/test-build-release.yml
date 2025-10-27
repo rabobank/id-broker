@@ -18,7 +18,7 @@ jobs:
       - run: .github/scripts/runTests.sh
 
   build-job:
-    name: Build config-hub
+    name: Build id-broker
     runs-on: ubuntu-latest
     needs: test-job
     steps:
@@ -46,7 +46,7 @@ jobs:
           path: dist/
 
   release_job:
-    name: Release config-hub
+    name: Release id-broker
     runs-on: ubuntu-latest
     needs: build-job
     steps:
