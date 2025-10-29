@@ -124,7 +124,6 @@ func GenerateToken(serviceInstanceId string) (string, error) {
 		info.FromMap(credentials)
 
 		token, e := uaa.Token(info.Username, info.Password, info.Audience)
-		fmt.Println("result", token, e)
 		if e != nil {
 			return "", e
 		}
