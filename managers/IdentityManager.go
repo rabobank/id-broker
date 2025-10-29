@@ -96,11 +96,11 @@ func UnbindIdentity(serviceInstanceId string, bindingId string) error {
 }
 
 func ValidateBinding(serviceInstanceId string, bindingId string, appGuid string) error {
-	fmt.Printf("Validating Binding %s of service instance %s with app %s", bindingId, serviceInstanceId, appGuid)
+	// fmt.Printf("Validating Binding %s of service instance %s with app %s", bindingId, serviceInstanceId, appGuid)
 	bindingName := fmt.Sprintf(IdbIdentityBindingCredhubName, serviceInstanceId, bindingId)
-	fmt.Println("Checking Binding", bindingName)
+	// fmt.Println("Checking Binding", bindingName)
 	credentials, e := credhubClient.GetJsonByName(bindingName)
-	fmt.Println("result", credentials, e)
+	// fmt.Println("result", credentials, e)
 	if e != nil {
 		fmt.Println("Error getting binding entry", e)
 		return e
