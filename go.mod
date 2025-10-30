@@ -1,6 +1,6 @@
 module github.com/rabobank/id-broker
 
-go 1.25.1
+go 1.25.3
 
 require (
 	github.com/cloudfoundry-community/go-cfenv v1.18.0
