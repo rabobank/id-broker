@@ -17,10 +17,10 @@ jobs:
     name: Test all components
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v5
       - uses: actions/setup-go@v6
         with:
           go-version-file: 'go.mod'
-      - uses: actions/checkout@v5
       - run: .github/scripts/runTests.sh
 
   build-job:
