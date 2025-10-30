@@ -11,6 +11,8 @@ on:
       - "**.md"
       - "LICENSE"
       - "doc/**"
+  workflow_dispatch:
+
 
 jobs:
   test-job:
