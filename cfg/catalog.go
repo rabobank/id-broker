@@ -4,6 +4,10 @@ import (
 	"github.com/rabobank/id-broker/domain"
 )
 
+const (
+	IdbApiUrlAttribute = "idb_api"
+)
+
 var Catalog = domain.Catalog{
 	Services: []domain.Service{
 		{
@@ -25,7 +29,8 @@ var Catalog = domain.Catalog{
 					Id:          "2b21351e-b99a-4f5c-b79b-188487c8acb9",
 					Description: "Standard CF ID",
 					Metadata: map[string]any{
-						"cost": 0,
+						"cost":             0,
+						IdbApiUrlAttribute: "",
 					},
 				},
 			},

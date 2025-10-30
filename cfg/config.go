@@ -89,6 +89,7 @@ func Initialize() {
 		}
 
 		IdbUrl = cfEnv.ApplicationURIs[0]
+		Catalog.Services[0].Plans[0].Metadata.(map[string]any)[IdbApiUrlAttribute] = fmt.Sprintf("https://%s", IdbUrl)
 	}
 
 	if v, present := os.LookupEnv("VCAP_PLATFORM_OPTIONS"); present {
