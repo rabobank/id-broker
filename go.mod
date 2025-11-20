@@ -5,7 +5,7 @@ go 1.25.3
 require (
 	github.com/cloudfoundry-community/go-cfenv v1.18.0
 	github.com/cloudfoundry-community/go-uaa v0.3.5
-	github.com/cloudfoundry/go-cfclient/v3 v3.0.0-alpha.15
+	github.com/cloudfoundry/go-cfclient/v3 v3.0.0-alpha.16
 	github.com/gomatbase/csn v1.0.1
 	github.com/gomatbase/go-we v1.0.0-b92
 	github.com/rabobank/credhub-client v0.0.2
