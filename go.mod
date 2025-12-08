@@ -9,7 +9,7 @@ require (
 	github.com/gomatbase/csn v1.0.1
 	github.com/gomatbase/go-we v1.0.0-b92
 	github.com/rabobank/credhub-client v0.0.2
-	golang.org/x/oauth2 v0.32.0
+	golang.org/x/oauth2 v0.34.0
 )
 
 require (
